@@ -1,3 +1,23 @@
 <resources>
-    <string name="app_name">makeeen_task</string>
+    <string name="app_name">Telefreik</string>
+    <string name="terms"><u> الشروط و الأحكام </u></string>
+    <string name="sen_again"><u>إعادة إرسال</u></string>
+    <string name="tv1">تلفريك - هو التطبيق الأفضل للمقارنة بين وسائل المواصلات المختلفة واختيار أفضل سعر وجودة لجميع وسائل المواصلات التي تريدها إلكترونيا دون تعب</string>
+    <string name="tv2">تلفريك - هو التطبيق الأفضل للمقارنة بين وسائل المواصلات المختلفة واختيار أفضل سعر وجودة لجميع وسائل المواصلات التي تريدها إلكترونيا دون مجهود</string>
+    <string name="tv3">تلفريك - هو التطبيق الأفضل للمقارنة بين وسائل المواصلات المختلفة واختيار أفضل سعر وجودة لجميع وسائل المواصلات التي تريدها إلكترونيا دون إرهاق</string>
+    <string name="next">التالي</string>
+    <string name="skip">تخطي</string>
+    <string name="finish">إنهاء</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_title">ابحث عن رحلتك الاَن</string>
+    <string name="nv_main">الرئيسية</string>
+    <string name="nv_reserve">حجوزاتي</string>
+    <string name="nv_wallet">محفظتي</string>
+    <string name="nv_support">الدعم و المساعدة</string>
+    <string name="nv_rating">قيم التطبيق</string>
+    <string name="nv_lang">English</string>
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+    <string name="nv_logout">تسجيل الخروج</string>
 </resources>

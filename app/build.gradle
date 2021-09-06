@@ -12,7 +12,7 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "com.ahmed.makeeen_task"
+        applicationId "com.app.telefric"
         minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
@@ -43,6 +43,8 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.3.0'
     implementation 'com.google.android.material:material:1.4.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
@@ -51,6 +53,10 @@ dependencies {
     implementation 'com.squareup.retrofit2:retrofit:2.7.2'
     implementation 'com.squareup.retrofit2:converter-gson:2.7.2'
     implementation 'com.squareup.retrofit2:adapter-rxjava2:2.4.0'
+
+// drawer layout
+    implementation("androidx.drawerlayout:drawerlayout:1.1.1")
+
 
     // OkHttp, Retrofit
     api 'com.squareup.okhttp3:okhttp:3.14.7'
@@ -72,4 +78,30 @@ dependencies {
     //glide
     implementation "com.github.bumptech.glide:glide:4.11.0"
     kapt 'com.github.bumptech.glide:compiler:4.11.0'
+
+    //firebase aut
+    implementation platform("com.google.firebase:firebase-bom:26.5.0")
+    implementation "com.google.firebase:firebase-auth-ktx"
+
+    implementation 'com.google.firebase:firebase-messaging-ktx'
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+
+    // pin view
+    implementation 'com.github.aabhasr1:OtpView:v1.1.2-ktx' // kotlin
+
+    implementation 'com.kaopiz:kprogresshud:1.2.0'
+
+    // slider layout
+    implementation 'com.tbuonomo:dotsindicator:4.2'
+
+    // shap carve
+    implementation 'io.github.florent37:shapeofview:1.4.7'
+
+    // circular image view
+
+        implementation 'com.github.abdularis:circularimageview:1.5'
+
+
+
 }
+apply plugin: 'com.google.gms.google-services'  // Google Services plugin

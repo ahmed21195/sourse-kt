@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:id="@+id/containerlay"
+    xmlns:project="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".makeen.presentation.view.fragment.DrawerFragment">
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:clickable="true"
+        project:layout_constraintStart_toStartOf="parent"
+        project:layout_constraintEnd_toEndOf="parent"
+        project:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/bg_nv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:visibility="gone"
+        app:cardBackgroundColor="@color/black"
+        android:id="@+id/card_view"
+       style="@style/CustomCardViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/contain"
+        android:background="@color/white"
+        project:layout_constraintStart_toStartOf="parent"
+        project:layout_constraintEnd_toEndOf="parent"
+
+        project:layout_constraintTop_toTopOf="parent"
+        project:layout_constraintBottom_toBottomOf="@+id/profile"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"/>
+
+    <com.github.abdularis.civ.CircleImageView
+        android:id="@+id/image"
+        android:layout_marginTop="40dp"
+        project:layout_constraintTop_toTopOf="parent"
+        project:layout_constraintEnd_toEndOf="parent"
+        project:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/profile_image"
+      />
+    <TextView
+        android:layout_marginTop="15dp"
+        android:id="@+id/name"
+        project:layout_constraintEnd_toEndOf="parent"
+        project:layout_constraintStart_toStartOf="parent"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        project:layout_constraintTop_toBottomOf="@+id/image"
+        android:textColor="@color/name_color"
+        android:fontFamily="@font/tajawal_edium"
+        android:layout_height="wrap_content"
+        android:text="مصطفي محمد أحمد"
+        android:layout_width="wrap_content" />
+    <TextView
+        android:id="@+id/profile"
+        project:layout_constraintEnd_toEndOf="parent"
+        project:layout_constraintStart_toStartOf="parent"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10sp"
+        project:layout_constraintTop_toBottomOf="@+id/name"
+        android:textColor="#144C94"
+        android:fontFamily="@font/tajawal_edium"
+        android:layout_height="wrap_content"
+        android:text="الملف الشخصي"
+        android:layout_width="wrap_content" />
+    <TextView
+        android:id="@+id/home"
+        android:background="#144C94"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/tajawal_regular"
+        android:drawableEnd="@drawable/home"
+        android:drawablePadding="10sp"
+        android:text="@string/nv_main"
+        android:padding="15sp"
+        project:layout_constraintTop_toBottomOf="@+id/contain"
+        project:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <View
+
+        project:layout_constraintStart_toStartOf="parent"
+        project:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="20dp"
+        project:layout_constraintTop_toBottomOf="@+id/home"
+        android:id="@+id/divider_1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginEnd="20dp"
+        android:background="#5D84B6" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/myreseve"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/tajawal_regular"
+        android:drawableEnd="@drawable/datenv"
+        android:drawablePadding="10sp"
+        android:text="@string/nv_reserve"
+
+        android:padding="10sp"
+        project:layout_constraintTop_toBottomOf="@+id/divider_1"
+        project:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <View
+        project:layout_constraintStart_toStartOf="parent"
+        project:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10sp"
+        project:layout_constraintTop_toBottomOf="@+id/myreseve"
+        android:id="@+id/divider_2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginEnd="20dp"
+        android:background="#5D84B6" />
+
+    <TextView
+        android:id="@+id/mywallet"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/tajawal_regular"
+        android:drawableEnd="@drawable/wallet"
+        android:drawablePadding="10sp"
+        android:text="@string/nv_wallet"
+        android:layout_marginTop="5dp"
+        android:padding="10sp"
+        project:layout_constraintTop_toBottomOf="@+id/divider_2"
+        project:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <View
+        project:layout_constraintStart_toStartOf="parent"
+        project:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10sp"
+        project:layout_constraintTop_toBottomOf="@+id/mywallet"
+        android:id="@+id/divider_3"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginEnd="20dp"
+        android:background="#5D84B6" />
+
+
+
+    <TextView
+        android:id="@+id/mysupport"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/tajawal_regular"
+        android:drawableEnd="@drawable/headset"
+        android:drawablePadding="10sp"
+        android:text="@string/nv_support"
+        android:layout_marginTop="5dp"
+        android:padding="10sp"
+        project:layout_constraintTop_toBottomOf="@+id/divider_3"
+        project:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <View
+        project:layout_constraintStart_toStartOf="parent"
+        project:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10sp"
+        project:layout_constraintTop_toBottomOf="@+id/mysupport"
+        android:id="@+id/divider_4"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginEnd="20dp"
+        android:background="#5D84B6" />
+
+
+    <TextView
+        android:id="@+id/myrates"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/tajawal_regular"
+        android:drawableEnd="@drawable/rating"
+        android:drawablePadding="10sp"
+        android:text="@string/nv_rating"
+        android:layout_marginTop="5dp"
+        android:padding="10sp"
+        project:layout_constraintTop_toBottomOf="@+id/divider_4"
+        project:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <View
+        project:layout_constraintStart_toStartOf="parent"
+        project:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10sp"
+        project:layout_constraintTop_toBottomOf="@+id/myrates"
+        android:id="@+id/divider_5"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginEnd="20dp"
+        android:background="#5D84B6" />
+
+
+    <TextView
+        android:id="@+id/mylang"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/tajawal_regular"
+        android:drawableEnd="@drawable/language"
+        android:drawablePadding="10sp"
+        android:textAlignment="viewEnd"
+        android:text="@string/nv_lang"
+        android:layout_marginTop="5dp"
+        android:padding="10sp"
+        project:layout_constraintTop_toBottomOf="@+id/divider_5"
+        project:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <View
+        project:layout_constraintStart_toStartOf="parent"
+        project:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10sp"
+        project:layout_constraintTop_toBottomOf="@+id/mylang"
+        android:id="@+id/divider_6"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginEnd="20dp"
+        android:background="#5D84B6" />
+    <TextView
+
+        android:id="@+id/logout"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/tajawal_regular"
+        android:drawableEnd="@drawable/logout"
+        android:drawablePadding="10sp"
+        android:text="@string/nv_logout"
+
+        android:padding="15sp"
+        android:background="#144C94"
+        project:layout_constraintBottom_toBottomOf="parent"
+        project:layout_constraintStart_toStartOf="parent"
+        project:layout_constraintEnd_toStartOf="parent"
+        project:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

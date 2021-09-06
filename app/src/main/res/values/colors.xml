@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="colorAccent">#144C94</color>
+    <color name="colorPrimary">#144C94</color>
+    <color name="colorPrimaryDark">#144C94</color>
+
+
+
     <color name="purple_200">#FFC107</color>
     <color name="purple_500">#312E35</color>
     <color name="purple_700">#424242</color>
@@ -10,4 +16,6 @@
     <color name="window_bg">#1b1b1b</color>
     <color name="window_bg_dark">#141414</color>
     <color name="pink">#f8868b</color>
+    <color name="resendActive">#10BE67</color>
+    <color name="name_color">#333B49</color>
 </resources>

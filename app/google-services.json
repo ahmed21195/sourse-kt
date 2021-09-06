@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1024631190286",
+    "project_id": "firebaseauthpo",
+    "storage_bucket": "firebaseauthpo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1024631190286:android:8d9d200145a0fc927bdd5f",
+        "android_client_info": {
+          "package_name": "com.app.telefric"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1024631190286-j7hf0tt635bf8031okgugrmhil39jr0e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqdPyBQ_Yd6UJ6eE0jsLu5WlDY4HScloE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1024631190286-j7hf0tt635bf8031okgugrmhil39jr0e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

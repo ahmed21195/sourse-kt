@@ -1,0 +1,7 @@
+package com.app.telefric.makeen.data.model.response
+
+data class Country(
+    val id: Int,
+    val name: String,
+    val name_ar: String
+)
